@@ -5,7 +5,7 @@ using UnityEngine;
 public class RandomScript : MonoBehaviour {
     public float tumble;
 
-    private Rigidbody rigidbody;
+    private new Rigidbody rigidbody;
 
     private void Start()
     { 

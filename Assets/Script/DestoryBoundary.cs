@@ -5,6 +5,10 @@ using UnityEngine;
 public class DestoryBoundary : MonoBehaviour {
     private void OnTriggerExit(Collider other)
     {
-        Destroy(other.gameObject);
+        Debug.Log(other.tag);
+        if (other.tag != "Player")
+        {
+            Destroy(other.gameObject);
+        }
     }
 }
